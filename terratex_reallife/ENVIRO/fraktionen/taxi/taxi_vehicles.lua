@@ -10,14 +10,14 @@ taxiObjectOpen=false
 taxiGrundPrice=0
 function mv_taxi_func(thePlayer)
 	local x,y,z=getElementPosition(thePlayer)
-	local dis=getDistanceBetweenPoints3D(x,y,z,1812.78833008,-2067.48437500,14.27042961)
+	local dis=getDistanceBetweenPoints3D(x,y,z,1727.0999755859,2303.1999511719,11.5)
 	if(dis<20)then
 		if(vioGetElementData(thePlayer,"fraktion")==4)then
 			if(taxiObjectOpen)then
-				moveObject(taxiObject,2500,1812.78833008,-2067.48437500,14.27042961)
+				moveObject(taxiObject,2500,1727.0999755859,2303.1999511719,11.5)
 				taxiObjectOpen=false
 			else
-				moveObject(taxiObject,2500,1812.8666,-2057.4194,14.2704)
+				moveObject(taxiObject,2500,1726.8000488281,2303.6999511719,8.1999998092651)
 				taxiObjectOpen=true
 			end
 		end
@@ -26,24 +26,26 @@ end
 addCommandHandler("mv",mv_taxi_func,false,false)
 
 function onCreatetaxicars_func()
-	taxiObject=createObject(7657,1812.78833008,-2067.48437500,14.27042961,0.00000000,0.00000000,90.00000000) 
+	taxiObject=createObject(7657,1727.0999755859,2303.1999511719,11.5,0.00000000,0.00000000,0.00000000)  
 
 
 
-	frakselfcars[4][1]  = createVehicle(438,1734.79345703,-2056.68554688,13.50827503,0,0,269.00000000,"SA-TAXI")
-	frakselfcars[4][2]  = createVehicle(438,1734.77001953,-2061.51147461,13.50827503,0,0,268.99475098,"SA-TAXI")
-	frakselfcars[4][3]  = createVehicle(438,1734.76867676,-2066.27319336,13.50827503,0,0,268.99475098,"SA-TAXI")
-	frakselfcars[4][4]  = createVehicle(420,1807.98669434,-2035.22729492,13.38613224,0,0,180.00000000,"SA-TAXI")
-	frakselfcars[4][5]  = createVehicle(420,1800.49230957,-2034.95031738,13.38613224,0,0,180.00000000,"SA-TAXI")
-	frakselfcars[4][6]  = createVehicle(420,1792.58642578,-2034.79431152,13.38613224,0,0,180.00000000,"SA-TAXI")
-	frakselfcars[4][7]  = createVehicle(420,1784.74621582,-2034.45043945,13.18613529,0,0,180.00000000,"SA-TAXI")
-	frakselfcars[4][8]  = createVehicle(420,1767.39538574,-2051.28198242,13.53612995,0,0,269.95190430,"SA-TAXI")
-	frakselfcars[4][9]  = createVehicle(420,1767.33703613,-2047.39233398,13.53612995,0,0,269.95056152,"SA-TAXI")
-	frakselfcars[4][10] = createVehicle(487,1748.5380859375,-2045.2353515625,20.824502944946,0.263671875,359.736328125,146.78283691406,"SA-TAXI")    --  taxiheli 
-	frakselfcars[4][11]  = createVehicle(580,1768.2158203125,-2029.9619140625,13.483623504639,353.40270996094,359.86267089844,270.36804199219,"SA-TAXI")
-	frakselfcars[4][12]  = createVehicle(580,1768.4052734375,-2033.77734375,13.47914981842,353.95202636719,359.89013671875,270.76354980469,"SA-TAXI")
-	frakselfcars[4][13]  = createVehicle(580,1768.244140625,-2038.46875,13.316600799561,0.010986328125,359.76928710938,269.68688964844,"SA-TAXI")
-	frakselfcars[4][14] = createVehicle(409,1762.4755859375,-2056.18359375,13.384185791016,0.010986328125,359.79125976563,270.77453613281,"SA-TAXI") 
+	frakselfcars[4][1]  = createVehicle(438,1680.0213623047,2288.3430175781,10.532094955444,0,0,269.00000000,"SA-TAXI") -- cabbie
+	frakselfcars[4][2]  = createVehicle(438,1680.24609375,2292.578125,10.531458854675,0,0,268.99475098,"SA-TAXI") -- cabbie
+	frakselfcars[4][3]  = createVehicle(438,1680.1740722656,2296.6215820313,10.484557151794,0,0,268.99475098,"SA-TAXI") -- cabbie
+	frakselfcars[4][4]  = createVehicle(420,1679.4636230469,2347.1325683594,10.456047058105,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][5]  = createVehicle(420,1679.1672363281,2355.3957519531,10.456862449646,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][6]  = createVehicle(420,1679.2801513672,2350.8015136719,10.461874008179,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][7]  = createVehicle(420,1679.3402099609,2359.3937988281,10.453304290771,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][8]  = createVehicle(420,1679.3402099609,2363.8088378906,10.459678649902,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][9]  = createVehicle(420,1679.6767578125,2368.4821777344,10.4284324646,0,0,269.00000000,"SA-TAXI") -- taxi
+	frakselfcars[4][10] = createVehicle(487,1748.5380859375,-2045.2353515625,20.824502944946,0,0,269.00000000,"SA-TAXI")    --  maverick
+	frakselfcars[4][11]  = createVehicle(580,1679.4522705078,2318.4145507813,10.684432029724,0,0,269.00000000,"SA-TAXI") -- stafford
+	frakselfcars[4][12]  = createVehicle(580,1679.3552246094,2322.3806152344,10.677325248718,0,0,269.00000000,"SA-TAXI") -- stafford
+	frakselfcars[4][13]  = createVehicle(580,1679.5283203125,2326.6899414063,10.67725276947,0,0,269.00000000,"SA-TAXI") -- stafford
+	frakselfcars[4][14] = createVehicle(409,1681.4486083984,2303.525390625,9.9008722305298,0,0,269.00000000,"SA-TAXI") -- stretch
+	frakselfcars[4][15] = createVehicle(409,1681.4145507813,2312.7951660156,9.901496887207,0,0,269.00000000,"SA-TAXI")  -- stretch
+	frakselfcars[4][16] = createVehicle(409,1682.6624755859,2340.6682128906,10.010292053223,0,0,269.00000000,"SA-TAXI") -- stretch 
 
 
 	for theKey,theVehicle in ipairs(frakselfcars[4]) do
@@ -58,34 +60,37 @@ end
 addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onCreatetaxicars_func)
 
 function loadTaxiPricesFromDB()
-	local tarifa = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 1, tarifzone = 1});
-	local tarifb = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 1, tarifzone = 2});
-	local tarifc = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 1, tarifzone = 3});
+	local tarifa=MySQL_GetVar("taxipreise", "preis", "timezone='1' and tarifzone='1'")
+	local tarifb=MySQL_GetVar("taxipreise", "preis", "timezone='1' and tarifzone='2'")
+	local tarifc=MySQL_GetVar("taxipreise", "preis", "timezone='1' and tarifzone='3'")
 	taxiPrices[1]={tarifa,tarifb,tarifc}
 	
-	tarifa = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 2, tarifzone = 1});
-	tarifb = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 2, tarifzone = 2});
-	tarifc = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 2, tarifzone = 3});
+	tarifa=MySQL_GetVar("taxipreise", "preis", "timezone='2' and tarifzone='1'")
+	tarifb=MySQL_GetVar("taxipreise", "preis", "timezone='2' and tarifzone='2'")
+	tarifc=MySQL_GetVar("taxipreise", "preis", "timezone='2' and tarifzone='3'")
 	taxiPrices[2]={tarifa,tarifb,tarifc}
 	
-	tarifa = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 3, tarifzone = 1});
-	tarifb = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 3, tarifzone = 2});
-	tarifc = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 3, tarifzone = 3});
+	tarifa=MySQL_GetVar("taxipreise", "preis", "timezone='3' and tarifzone='1'")
+	tarifb=MySQL_GetVar("taxipreise", "preis", "timezone='3' and tarifzone='2'")
+	tarifc=MySQL_GetVar("taxipreise", "preis", "timezone='3' and tarifzone='3'")
 	taxiPrices[3]={tarifa,tarifb,tarifc}
-	taxiGrundPrice = MySql.helper.getValueSync("data_taxi_prices", "preis", {timezone = 0, tarifzone = 0});
+	taxiGrundPrice=MySQL_GetVar("taxipreise", "preis", "timezone='0' and tarifzone='0'")
 end
 
 function aktualizeTaxiPricesFromDB()
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[1][1] }, { timezone = 1, tarifzone = 1});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[1][2] }, { timezone = 1, tarifzone = 2});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[1][3] }, { timezone = 1, tarifzone = 3});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[2][1] }, { timezone = 2, tarifzone = 1});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[2][2] }, { timezone = 2, tarifzone = 2});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[2][3] }, { timezone = 2, tarifzone = 3});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[3][1] }, { timezone = 3, tarifzone = 1});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[3][2] }, { timezone = 3, tarifzone = 2});
-	MySql.helper.update("data_taxi_prices", { preis = taxiPrices[3][3] }, { timezone = 3, tarifzone = 3});
-	MySql.helper.update("data_taxi_prices", { preis = taxiGrundPrice }, { timezone = 0, tarifzone = 0});
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[1][1],"timezone='1' and tarifzone='1'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[1][2],"timezone='1' and tarifzone='2'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[1][3],"timezone='1' and tarifzone='3'")
+	
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[2][1],"timezone='2' and tarifzone='1'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[2][2],"timezone='2' and tarifzone='2'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[2][3],"timezone='2' and tarifzone='3'")
+		
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[3][1],"timezone='3' and tarifzone='1'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[3][2],"timezone='3' and tarifzone='2'")
+	MySQL_SetVar("taxipreise", "preis", taxiPrices[3][3],"timezone='3' and tarifzone='3'")
+	
+	MySQL_SetVar("taxipreise", "preis", taxiGrundPrice,"timezone='0' and tarifzone='0'")
 end
 
 
@@ -107,7 +112,7 @@ function setTarif_func(thePlayer,Command,timezone,tarifzone,preis)
 			showError(thePlayer,"Nutzung: /settarif [timezone 1-3] [tarifzone 1-3] [Preis]")
 		end
 	else
-		showError(thePlayer,"Du bist nicht der Taxileader!")
+		showError(thePlayer,"Du bist nicht Berechtigt! (Berechtigung: Rang 6)")
 	end
 end
 addCommandHandler("settarif",setTarif_func,false,false)
@@ -119,7 +124,7 @@ function setGrundTarif_func(thePlayer,Command,preis)
 			local prei=tonumber(preis)
 			if(prei)then
 				taxiGrundPrice=prei
-				showError(thePlayer,"Der Neue Grundpreis wurde gesetzt")
+				showError(thePlayer,"Der neue Grundpreis wurde gesetzt.")
 						
 			else
 				showError(thePlayer,"Nutzung: /setgrundtarif [Preis]")
