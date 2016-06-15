@@ -17,4 +17,4 @@ config["mysqldb"]=""
 -- It is highly recommend to disable this option if you change any code that is related to the database or if you change things in the database structure
 -- In this case: Import & Modify SQL Files manualy
 -- @info Not Implemented Yet!
-config["database_updater"] = true;
+config["database_updater"] = false;
