@@ -21,6 +21,8 @@ addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()
 		table.insert(allGuis,Login_Gui)
 		addEventHandler("onClientGUIClick", Gui_Login_Button, startLogin, false )
 		addEventHandler("onClientGUIAccepted", Gui_login_edit,acceptstartLogin,false)
+		sound = playSound("FILES/SOUNDS/login.mp3") --play loginsound
+		setSoundVolume(sound, 0.5) -- set the sound volume to 50%
 end
 
 )
