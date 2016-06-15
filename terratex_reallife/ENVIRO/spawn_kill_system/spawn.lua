@@ -81,7 +81,7 @@ function setPlayerSpawn(source, spawn, skinid, fraktion, firstspawn)
                     elseif (frakid == 3) then
                         spawnPlayer(source, 1033.6279296875, 1019.3505859375, 11, 308.06958007813, skinid, 0, 0, team[fraktion]) -- news
                     elseif (frakid == 4) then
-                        spawnPlayer(source, 1751.154296875, -2055.955078125, 13.881997108459, 154.12683105469, skinid, 0, 0, team[fraktion])
+                        spawnPlayer(source, 1677.7612304688,2335.6591796875,10.8203125, 308, skinid, 0, 0, team[fraktion])
                     elseif (frakid == 5) then
                         spawnPlayer(source, 254.4853515625, 77.443359375, 1003.640625, 179.91760253906, skinid, 6, 0, team[fraktion])
                     elseif (frakid == 6) then
