@@ -1,11 +1,8 @@
-
-
 interiorMarker={}
 polizeiraus=false
 ammonationmarker=false
 lvpdraus=false
 casinomarker=false
---table.insert(interiorMarker,{mark,portx,porty,portz,Interior,eigeneDIM,portDIM})
 function createInteriorMarker()
 local mark=createMarker(1554.6064453125,-1675.6083984375,16.1953125,"corona",2.0) --PDMarker drausen
 table.insert(interiorMarker,{mark,246.566085,110.7910156,1002.193481,10,0,0})
@@ -22,21 +19,17 @@ mark=createMarker(2233.671875,1713.8076171875,1012.2516479492,"corona",2.0)	--ca
 table.insert(interiorMarker,{mark,2193.09765625,1677.2080078125,12.3671875,0,0})
 setElementInterior(mark,1)
 
-mark=createMarker(1480.8837890625,-1770.935546875,18.795755386353,"corona",2.0)	--StadthalleMarker drausen
+mark=createMarker(2446.5947265625,2376.2102050781,12.163512229919,"corona",2.0)	--StadthalleMarker drausen
 table.insert(interiorMarker,{mark,386.825317,173.7809600,1007.358520,3,0,0})
 
 mark=createMarker(390.093566,173.8429565,1007.358520,"corona",2.0)	--StadthalleMarker drin
-table.insert(interiorMarker,{mark,1481.52734375,-1757.8447265625,17.53125,0,0,0})
+table.insert(interiorMarker,{mark,2441.3522949219,2375.5327148438,11.349493026733,0,0,0})
 setElementInterior(mark,3)
+
 
 mark=createMarker(2495.396484375,-1690.548828125,14.765625,"corona",2.0)	--grove drausen
 table.insert(interiorMarker,{mark,2495.9282,-1694.5155,1014.39141,3,0,0})
 setElementInterior(mark,0)
-
-mark=createMarker(2495.98535,-1692.2666,1014.39142,"corona",2.0)	--StadthalleMarker drin
-table.insert(interiorMarker,{mark,2495.099609375,-1686.7861328125,13.514009475708,0,0,0})
-setElementInterior(mark,3)
-
 
 mark=createMarker(2166.3935546875,-1671.7578125,15.074158668518,"corona",2.0)--drogenhaus
 table.insert(interiorMarker,{mark,318.3349609375,1118.4599609375,1084.8828125,5,0,0})
@@ -90,13 +83,12 @@ table.insert(interiorMarker,{mark,1572.984375,-1330.3095703125,16.484375,0,0,0})
 createPickup ( 1526.919921875,-1346.65234375,329.97796630859, 2,46, 10000)
 
 ----<<<<BANK>>>----
-mark=createMarker(1381.412109375,-1088.748046875,27.449289321899,"corona",2.0)--drausen
+mark=createMarker(2364.02734375,2377.638671875,10.8203125,"corona",2.0)--drausen
 table.insert(interiorMarker,{mark, 1542.21875,1691.552734375,8373.9833984375,1,0,0})
 
 mark=createMarker(1542.052734375,1694.662109375,8373.9833984375,"corona",2.0)--innen
-table.insert(interiorMarker,{mark,1374.775390625,-1089.404296875,25.493423461914,0,0,0})
+table.insert(interiorMarker,{mark,2360.2272949219,2377.45703125,10.8203125,0,0,0})
 setElementInterior(mark,1)
-
 ---<<<BARS>>>----
 ---<<<Alhambra>>>----
 mark=createMarker(1836.7255859375,-1682.9140625,13.335935592651,"corona",2.0)--drausen
@@ -281,6 +273,7 @@ function MarkerHit( hitElement, matchingDimension )
 								if(source==polizeiraus)or(source==lvpdraus)then
 									if(isBeamter(hitElement))then
 										setElementInterior ( hitElement, theMarkerTable[5], theMarkerTable[2], theMarkerTable[3], theMarkerTable[4]  )
+										outputDebugString(theMarkerTable[5])
 										setElementPosition (hitElement, theMarkerTable[2], theMarkerTable[3], theMarkerTable[4]  )
 										setElementDimension(hitElement,theMarkerTable[7])
 									end
