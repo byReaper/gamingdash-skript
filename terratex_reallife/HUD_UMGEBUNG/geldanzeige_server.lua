@@ -5,7 +5,7 @@
 -- Time: 01:02
 -- To change this template use File | Settings | File Templates.
 --
-
+--[[
 
 _setPlayerMoney=setPlayerMoney
 function setPlayerMoney(thePlayer,betrag)

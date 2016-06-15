@@ -5,7 +5,7 @@
 -- Time: 00:45
 -- To change this template use File | Settings | File Templates.
 --
-
+--[[
 local money=0
 local moneyChanged=false
 local moneyTimer=false
