@@ -13,7 +13,7 @@ config["domains"]={"gamingdash.xyz"}
 config["maindomain"]="gamingdash.xyz"
 
 --Bugtracker URL
-config["bugdomain"]="https://github.com/TerraTex-Community/TerraTex-Reallife-Reloaded/issues";
+config["bugdomain"]="https://github.com/BritishEye/gamingdash-skript/issues";
 
 --IP or Domain to Teamspeak3
 config["teamspeak"]="gamingdash.xyz"
