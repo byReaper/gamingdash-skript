@@ -51,7 +51,7 @@ function aktualkrank(theTime,fulltime)
 	end
 	
 	local timeready=((fulltime-theTime)/fulltime)*100
-	guiSetText(Krankenhaus_Label[4],string.format("%s Sekunden", tostring(theTime)))
+	guiSetText(Krankenhaus_Label[4],string.format("", tostring(theTime)))
 	guiProgressBarSetProgress ( Krankenhaus_progress,timeready)
 	
 	if not(theTime==0) then
