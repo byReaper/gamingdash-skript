@@ -25,7 +25,7 @@ config["clantag"]="[GDR]"
 config["communityname"]="GamingDash"
 
 --Mappername
-config["mappername"]="N-A"
+config["mappername"]="[GDR]Cyntax"
 
 --Scriptername
 config["scriptername"]="[GDR]byReaper"

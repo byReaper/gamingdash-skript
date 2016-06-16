@@ -8,9 +8,9 @@ config["password_hash"]="sha512"
 
 --MYSQL CONFIG:
 config["mysqlhost"]="localhost"
-config["mysqluser"]=""
+config["mysqluser"]="root"
 config["mysqlpassword"]=""
-config["mysqldb"]=""
+config["mysqldb"]="gdr"
 
 -- This Optional enables the database Update and Install system
 -- You should only used it, if you want a clean new install or you want to use all updates from git without own changes

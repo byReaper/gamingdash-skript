@@ -55,6 +55,7 @@ function disableLoginGui()
     guiSetVisible (Login_Gui , false)
 	showCursor (false)
 	toggleAllControls ( true, true, true )
+	stopSound(sound)
 end
 addEvent("hideLoginGui",true)
 addEventHandler("hideLoginGui",getRootElement(),disableLoginGui)
