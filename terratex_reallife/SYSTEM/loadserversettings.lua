@@ -49,9 +49,9 @@ function loadSettingsFromDB()
     serversettings["playerOfMonthPic"] = MySql.helper.getValueSync("data_settings", "Wert", { Name = "spielerDesMonats" });
 
 
-    setGameType("TerraTex Reallife Reloaded Script " .. serversettings["Version"])
+    setGameType("GamingDash Reallife" )
     setRuleValue("Homepage", config["maindomain"])
-    setMapName("TerraTex")
+    setMapName("San Andreas")
     resetWaterLevel(0)
 
 
