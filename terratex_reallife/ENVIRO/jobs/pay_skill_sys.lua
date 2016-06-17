@@ -40,7 +40,7 @@ local jobSetupTable={
     [4]={--Busfahrer
         "bus",
         {50,150,300,600,1200},
-        {[0]=15,37,92,154,192,320},
+        {[0]=30,74,100,154,192,320},
         {0.5,0.5},
         0.25, -- Randfaktor
         false, -- Randfaktor vor Teilung
@@ -59,7 +59,7 @@ local jobSetupTable={
     },
     [11]={--Truckerjob
         "truck",
-        {20,45,100,450,1300},
+        {20,75,175,390,990},
         {},--Wird der Funktion direkt übergeben
         {1,1},
         1, -- Randfaktor
