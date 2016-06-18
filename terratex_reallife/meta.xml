@@ -457,6 +457,9 @@
         <script src="ENGINE/mapFileAdditions/allDimensionObject_client.lua" type="client"/>
         <!-- SF AIPORT -->
         <map src="MAPS/umgebung/map-sf-airport.map" />
+		<map src="MAPS/vorplatz.map" />
+		<map src="MAPS/stadthalle.map" />
+		
         <script src="MAPS/mapscripts/vorplatzwasser.lua"  type="server"/>
     <!-- HAUSER -->
 				<map src="MAPS/hauser/iraumfix.map" />
